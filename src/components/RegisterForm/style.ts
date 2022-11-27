@@ -20,6 +20,11 @@ export const RegisterFormContainer = styled.form`
   gap: 16px;
   font-family: 'Courier New', Courier, monospace;
   position: relative;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const RemoveForm = styled.button`
@@ -30,6 +35,13 @@ export const RemoveForm = styled.button`
   height: 26px;
   cursor: pointer;
   background-color: transparent;
+  outline: none;
+  border: none;
+
+  @media (max-width: 768px) {
+    top: 40px;
+    right: 8px;
+  }
 
   & > img {
     position: absolute;
@@ -43,6 +55,7 @@ export const RegisterTitle = styled.h1`
   font-size: 1.8rem;
   margin-bottom: 10px;
   font-weight: bold;
+  margin-top: 8px;
 `;
 
 export const RegisterLabel = styled.label`

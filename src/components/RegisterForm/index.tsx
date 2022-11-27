@@ -31,7 +31,7 @@ const RegisterForm: React.FC<{ setFalse: () => void }> = ({ setFalse }) => {
   return (
     <ShadowDiv>
       <RegisterFormContainer onSubmit={(e) => handleSubmit(e)}>
-        <RemoveForm>
+        <RemoveForm onClick={() => setFalse()}>
           <img
             src="/images/close-button-svgrepo-com.svg"
             alt="fechar cadastro"

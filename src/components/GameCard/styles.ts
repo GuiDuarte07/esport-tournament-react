@@ -7,6 +7,10 @@ export const GameImg = styled.img`
   border-radius: 10px;
   margin-right: 50px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    max-width: 300px;
+  }
 `;
 
 export const Games = styled.div`
@@ -15,6 +19,13 @@ export const Games = styled.div`
   justify-content: space-between;
   padding-bottom: 25px;
   border-bottom: 1px solid rgba(170, 167, 167, 0.493);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 16px;
+    align-items: center;
+  }
 
   &:hover {
     scale: 1.01;
@@ -31,5 +42,9 @@ export const GameDescription = styled.div`
     font-weight: bold;
     margin-top: 2px;
     margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 96%;
   }
 `;

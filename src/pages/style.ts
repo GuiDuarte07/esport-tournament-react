@@ -6,6 +6,11 @@ export const InfoCardsContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const GlobalContainer = styled.div`
@@ -24,6 +29,13 @@ export const MainContainer = styled.main`
   flex-direction: column;
   gap: 50px;
   padding-bottom: 25px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
+  }
 `;
 
 export const Sections = styled.section`
@@ -40,12 +52,22 @@ export const IntroducionTitle = styled.h1`
   font-weight: bold;
   font-size: 50px;
   max-width: 450px;
+
+  @media (max-width: 768px) {
+    max-width: 250px;
+  }
 `;
 
 export const IntroducionTitleMargin = styled(IntroducionTitle)`
   z-index: 100;
   margin-top: -60px;
   position: relative;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    margin-top: 0;
+    animation: none;
+  }
 `;
 
 export const Section2 = styled.section`
@@ -53,12 +75,21 @@ export const Section2 = styled.section`
   display: flex;
   justify-content: space-between;
   padding-bottom: 15px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const IntroductionContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const IntroductionVideo = styled.div`
@@ -102,6 +133,12 @@ export const IntroductionVideoPlay = styled.div`
 export const IntroductionText = styled.p`
   font-size: 1.05rem;
   max-width: 450px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    text-align: center;
+    text-align: left;
+  }
 `;
 
 export const ListUl = styled.ul`
@@ -111,6 +148,10 @@ export const ListUl = styled.ul`
     align-items: center;
     font-size: 0.9rem;
     margin-bottom: 8px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 
   & li::before {

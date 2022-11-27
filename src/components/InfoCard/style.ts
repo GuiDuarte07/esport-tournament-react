@@ -11,6 +11,11 @@ export const InfoCardContainer = styled.div`
   height: 2.5rem;
   gap: 3px;
   height: fit-content;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const InfoCardTitle = styled.h3`
@@ -23,6 +28,10 @@ export const InfoCardContent = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
+
+  @media (max-width: 768px) {
+    min-width: 180px;
+  }
 `;
 
 export const InfoCardDesc = styled.h3`

@@ -17,7 +17,7 @@ import {
   MainContainer,
   Section2,
   Sections
-} from '../style';
+} from './style';
 import { gameData } from '../utils/GameData';
 
 const Home: React.FC = () => {

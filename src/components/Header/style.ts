@@ -5,6 +5,11 @@ export const FrontSection = styled.section`
   width: 100%;
   height: 350px;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    height: 180px;
+    margin: 0 25px;
+  }
 `;
 
 export const HeaderStyle = styled.header`
@@ -15,6 +20,10 @@ export const HeaderStyle = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -25,10 +34,19 @@ export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    min-width: 100%;
+  }
 `;
 
 export const LogoImg = styled.img`
   height: 150px;
+
+  @media (max-width: 768px) {
+    height: 80px;
+  }
 `;
 
 export const BannerImg = styled.img`
