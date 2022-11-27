@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AppContext } from '../components/Context/AppContext';
+import { AppContext, IContextType } from '../components/Context/AppContext';
 import GameCard from '../components/GameCard';
 import Header from '../components/Header';
 import InfoCard from '../components/InfoCard';
@@ -21,14 +21,17 @@ import {
 import { gameData } from '../utils/GameData';
 
 const Home: React.FC = () => {
-  const contextProps = useContext(AppContext);
-  if (contextProps === null) return <>Not loading</>;
+  const { showRegisterForm, setShowRegisterForm } = useContext(
+    AppContext
+  ) as IContextType;
 
-  const { showRegisterForm } = contextProps;
+  const setFalse = (): void => {
+    setShowRegisterForm(false);
+  };
 
   return (
     <GlobalContainer>
-      {showRegisterForm && <RegisterForm />}
+      {showRegisterForm && <RegisterForm setFalse={setFalse} />}
       <Header />
       <MainContainer>
         <Sections>
@@ -36,14 +39,11 @@ const Home: React.FC = () => {
             Escolha seu jogo e faça sua história.
           </IntroducionTitleMargin>
           <InfoCardsContainer>
-            <InfoCard desc="Ativo" title="Status competição" />
-            {/* <div className="card">
-          <h3 className="title-card">Status competição</h3>
-          <div className="content-card">
-            <div className="green-circle" />
-            <h3 className="card-desc">Ativo</h3>
-          </div>
-        </div> */}
+            <InfoCard
+              desc="Ativo"
+              title="Status competição"
+              src="/images/circle-svgrepo-com.svg"
+            />
             <InfoCard
               desc="30 de dezembro, 14:00"
               title="Prazo inscrição"

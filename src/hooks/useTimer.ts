@@ -65,8 +65,6 @@ const useTimer = (EventDate: Date): ITimer => {
     return () => clearInterval(decreaseInterval);
   }, []);
 
-  console.log(restDay);
-
   return restDay;
 };
 

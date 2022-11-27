@@ -8,7 +8,7 @@ import {
   InfoCardTitle
 } from './style';
 
-const InfoCard: React.FC<{ title: string; desc: string; src?: string }> = ({
+const InfoCard: React.FC<{ title: string; desc: string; src: string }> = ({
   title,
   desc,
   src
@@ -17,7 +17,7 @@ const InfoCard: React.FC<{ title: string; desc: string; src?: string }> = ({
     <InfoCardContainer>
       <InfoCardTitle>{title}</InfoCardTitle>
       <InfoCardContent>
-        {src && <InfoCardImg src={src} />}
+        <InfoCardImg src={src} />
         <InfoCardDesc>{desc}</InfoCardDesc>
       </InfoCardContent>
     </InfoCardContainer>
