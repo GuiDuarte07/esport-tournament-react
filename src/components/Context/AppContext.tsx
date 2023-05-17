@@ -12,7 +12,7 @@ const AppContextProvider: React.FC<{ children: ReactNode }> = ({
   children
 }) => {
   const [showRegisterForm, setShowRegisterForm] = useState<boolean>(false);
-  const restDay = useTimer(new Date(2022, 11, 30, 14));
+  const restDay = useTimer(new Date(2023, 5, 30, 14));
 
   const value = { showRegisterForm, setShowRegisterForm, restDay };
 

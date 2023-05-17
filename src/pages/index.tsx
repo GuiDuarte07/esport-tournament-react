@@ -45,7 +45,7 @@ const Home: React.FC = () => {
               src="/images/circle-svgrepo-com.svg"
             />
             <InfoCard
-              desc="30 de dezembro, 14:00"
+              desc="30 de junho, 14:00"
               title="Prazo inscrição"
               src="/images/calendar-symbol-svgrepo-com.svg"
             />
